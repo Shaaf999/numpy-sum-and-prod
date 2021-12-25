@@ -1,0 +1,6 @@
+import numpy as np
+n,m= map(int,input().split())
+arr=np.array([input().split() for i in range(n)], dtype=int)   #np.array
+sumarr= np.sum(arr ,axis =0)  # sum of array
+print(np.prod(sumarr , axis=0)) # product of sumarray
+
